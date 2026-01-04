@@ -159,25 +159,24 @@ public class IntroducirReforma extends javax.swing.JDialog {
                             .addComponent(jLabel1))
                         .addGap(27, 27, 27)
                         .addGroup(pnlClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtFecha)
-                            .addComponent(txtCodigo))))
-                .addGap(83, 83, 83)
+                            .addComponent(txtCodigo)
+                            .addComponent(txtFecha, javax.swing.GroupLayout.DEFAULT_SIZE, 90, Short.MAX_VALUE))))
+                .addGap(107, 107, 107)
                 .addGroup(pnlClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pnlClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(pnlClienteLayout.createSequentialGroup()
-                            .addComponent(lblApellidos)
-                            .addGap(18, 18, 18)
-                            .addComponent(jtextfield1))
-                        .addGroup(pnlClienteLayout.createSequentialGroup()
-                            .addComponent(lblNombre)
-                            .addGap(20, 20, 20)
-                            .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(0, 0, Short.MAX_VALUE)))
                     .addGroup(pnlClienteLayout.createSequentialGroup()
                         .addComponent(lblDireccion)
                         .addGap(18, 18, 18)
-                        .addComponent(txtDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(33, 33, 33))
+                        .addComponent(txtDireccion))
+                    .addGroup(pnlClienteLayout.createSequentialGroup()
+                        .addComponent(lblNombre)
+                        .addGap(20, 20, 20)
+                        .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 315, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(pnlClienteLayout.createSequentialGroup()
+                        .addComponent(lblApellidos)
+                        .addGap(18, 18, 18)
+                        .addComponent(jtextfield1)))
+                .addContainerGap())
         );
         pnlClienteLayout.setVerticalGroup(
             pnlClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -232,7 +231,7 @@ public class IntroducirReforma extends javax.swing.JDialog {
         pnlAccionesLayout.setHorizontalGroup(
             pnlAccionesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlAccionesLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(50, Short.MAX_VALUE)
                 .addComponent(btnGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(58, 58, 58)
                 .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -269,8 +268,8 @@ public class IntroducirReforma extends javax.swing.JDialog {
         spnCantidad.setToolTipText("Cantidad de trabajos");
 
         btnAgregar.setBackground(new java.awt.Color(204, 255, 255));
-        btnAgregar.setText("Añadir");
-        btnAgregar.setToolTipText("Añade trabajo al presupuesto");
+        btnAgregar.setText("Agregar");
+        btnAgregar.setToolTipText("Agregar trabajo al presupuesto");
         btnAgregar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAgregarActionPerformed(evt);
@@ -293,34 +292,36 @@ public class IntroducirReforma extends javax.swing.JDialog {
         pnlServiciosLayout.setHorizontalGroup(
             pnlServiciosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
             .addGroup(pnlServiciosLayout.createSequentialGroup()
-                .addContainerGap(26, Short.MAX_VALUE)
-                .addGroup(pnlServiciosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(pnlServiciosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(pnlServiciosLayout.createSequentialGroup()
                         .addComponent(cbTrabajo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(spnCantidad, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(btnAgregar))
-                    .addComponent(lblImagen, javax.swing.GroupLayout.PREFERRED_SIZE, 352, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(spPresupuesto, javax.swing.GroupLayout.PREFERRED_SIZE, 462, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(27, 27, 27))
+                    .addComponent(lblImagen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(29, 29, 29)
+                .addComponent(spPresupuesto, javax.swing.GroupLayout.PREFERRED_SIZE, 502, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         pnlServiciosLayout.setVerticalGroup(
             pnlServiciosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlServiciosLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(pnlServiciosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(spPresupuesto, javax.swing.GroupLayout.PREFERRED_SIZE, 267, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(pnlServiciosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(pnlServiciosLayout.createSequentialGroup()
                         .addGroup(pnlServiciosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(cbTrabajo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(spnCantidad, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnAgregar))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(lblImagen, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(27, Short.MAX_VALUE))
+                        .addComponent(lblImagen, javax.swing.GroupLayout.DEFAULT_SIZE, 247, Short.MAX_VALUE))
+                    .addComponent(spPresupuesto, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                .addContainerGap())
         );
+
+        btnAgregar.getAccessibleContext().setAccessibleDescription("Añadir trabajo al presupuesto");
 
         Guardar.setText("Acciones");
         Guardar.addActionListener(new java.awt.event.ActionListener() {
@@ -363,22 +364,23 @@ public class IntroducirReforma extends javax.swing.JDialog {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(29, 29, 29)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(pnlCliente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(pnlServicios, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(pnlAcciones, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(pnlAcciones, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(32, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(23, 23, 23)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(29, 29, 29)
                 .addComponent(pnlCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(30, 30, 30)
                 .addComponent(pnlServicios, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(29, 29, 29)
                 .addComponent(pnlAcciones, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28))
+                .addContainerGap(29, Short.MAX_VALUE))
         );
 
         pack();
@@ -469,7 +471,7 @@ public class IntroducirReforma extends javax.swing.JDialog {
        
         
         
-        if (!codigo.matches("\\d*") || codigo.isEmpty()) errores+="\n-Error en DNI";
+        if (!codigo.matches("\\d*") || codigo.isEmpty()) errores+="\n-Error en Código";
         if (!nombre.matches("[A-Z]*[\\s[A-Z]*]*") || nombre.isEmpty()) errores+="\n-Error en Nombre";
         if (!apellidos.matches("[A-Z]*[\\s[A-Z]*]*") || apellidos.isEmpty()) errores+="\n-Error en Apellidos";
         if (!direccion.matches("[A-Z]*[\\s[A-Z]*]*[0-9]*") || direccion.isEmpty()) errores+="\n-Error en Dirección";
@@ -481,7 +483,7 @@ public class IntroducirReforma extends javax.swing.JDialog {
             System.out.println("Registro Guardado");
             JOptionPane.showMessageDialog(null,"Registro guardado.");
             limpiarFormulario();
-            System.exit(0);
+            //System.exit(0);
         }
         else{
             System.out.println("Errores: " + errores);
